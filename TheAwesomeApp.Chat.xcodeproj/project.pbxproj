@@ -13,7 +13,36 @@
 		3D2625CC246558BB005C5596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2625CA246558BB005C5596 /* Main.storyboard */; };
 		3D2625CE246558BE005C5596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2625CD246558BE005C5596 /* Assets.xcassets */; };
 		3D2625D1246558BE005C5596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2625CF246558BE005C5596 /* LaunchScreen.storyboard */; };
+		3DF4C0232465D2EC00B26B7C /* ChatModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF4C0212465D2EC00B26B7C /* ChatModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DF4C0262465D2EC00B26B7C /* ChatModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF4C01F2465D2EC00B26B7C /* ChatModule.framework */; };
+		3DF4C0272465D2EC00B26B7C /* ChatModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF4C01F2465D2EC00B26B7C /* ChatModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3DF4C02D2465D36E00B26B7C /* ChatModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF4C02C2465D36E00B26B7C /* ChatModule.storyboard */; };
+		3DF4C02F2465D40500B26B7C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF4C02E2465D40500B26B7C /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DF4C0242465D2EC00B26B7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2625B9246558BA005C5596 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DF4C01E2465D2EC00B26B7C;
+			remoteInfo = ChatModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DF4C0282465D2EC00B26B7C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3DF4C0272465D2EC00B26B7C /* ChatModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3D2625C1246558BB005C5596 /* TheAwesomeApp.Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheAwesomeApp.Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +53,23 @@
 		3D2625CD246558BE005C5596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D2625D0246558BE005C5596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D2625D2246558BE005C5596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF4C01F2465D2EC00B26B7C /* ChatModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChatModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF4C0212465D2EC00B26B7C /* ChatModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatModule.h; sourceTree = "<group>"; };
+		3DF4C0222465D2EC00B26B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF4C02C2465D36E00B26B7C /* ChatModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatModule.storyboard; sourceTree = "<group>"; };
+		3DF4C02E2465D40500B26B7C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D2625BE246558BB005C5596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF4C0262465D2EC00B26B7C /* ChatModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF4C01C2465D2EC00B26B7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				3D2625C3246558BB005C5596 /* TheAwesomeApp.Chat */,
+				3DF4C0202465D2EC00B26B7C /* ChatModule */,
 				3D2625C2246558BB005C5596 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				3D2625C1246558BB005C5596 /* TheAwesomeApp.Chat.app */,
+				3DF4C01F2465D2EC00B26B7C /* ChatModule.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +111,29 @@
 			path = TheAwesomeApp.Chat;
 			sourceTree = "<group>";
 		};
+		3DF4C0202465D2EC00B26B7C /* ChatModule */ = {
+			isa = PBXGroup;
+			children = (
+				3DF4C0212465D2EC00B26B7C /* ChatModule.h */,
+				3DF4C0222465D2EC00B26B7C /* Info.plist */,
+				3DF4C02C2465D36E00B26B7C /* ChatModule.storyboard */,
+				3DF4C02E2465D40500B26B7C /* ChatViewController.swift */,
+			);
+			path = ChatModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3DF4C01A2465D2EC00B26B7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF4C0232465D2EC00B26B7C /* ChatModule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		3D2625C0246558BB005C5596 /* TheAwesomeApp.Chat */ = {
@@ -77,15 +143,35 @@
 				3D2625BD246558BB005C5596 /* Sources */,
 				3D2625BE246558BB005C5596 /* Frameworks */,
 				3D2625BF246558BB005C5596 /* Resources */,
+				3DF4C0282465D2EC00B26B7C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3DF4C0252465D2EC00B26B7C /* PBXTargetDependency */,
 			);
 			name = TheAwesomeApp.Chat;
 			productName = TheAwesomeApp.Chat;
 			productReference = 3D2625C1246558BB005C5596 /* TheAwesomeApp.Chat.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3DF4C01E2465D2EC00B26B7C /* ChatModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF4C02B2465D2EC00B26B7C /* Build configuration list for PBXNativeTarget "ChatModule" */;
+			buildPhases = (
+				3DF4C01A2465D2EC00B26B7C /* Headers */,
+				3DF4C01B2465D2EC00B26B7C /* Sources */,
+				3DF4C01C2465D2EC00B26B7C /* Frameworks */,
+				3DF4C01D2465D2EC00B26B7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatModule;
+			productName = ChatModule;
+			productReference = 3DF4C01F2465D2EC00B26B7C /* ChatModule.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +185,10 @@
 				TargetAttributes = {
 					3D2625C0246558BB005C5596 = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					3DF4C01E2465D2EC00B26B7C = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -116,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				3D2625C0246558BB005C5596 /* TheAwesomeApp.Chat */,
+				3DF4C01E2465D2EC00B26B7C /* ChatModule */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +219,14 @@
 				3D2625D1246558BE005C5596 /* LaunchScreen.storyboard in Resources */,
 				3D2625CE246558BE005C5596 /* Assets.xcassets in Resources */,
 				3D2625CC246558BB005C5596 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF4C01D2465D2EC00B26B7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF4C02D2465D36E00B26B7C /* ChatModule.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +243,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DF4C01B2465D2EC00B26B7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF4C02F2465D40500B26B7C /* ChatViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DF4C0252465D2EC00B26B7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DF4C01E2465D2EC00B26B7C /* ChatModule */;
+			targetProxy = 3DF4C0242465D2EC00B26B7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3D2625CA246558BB005C5596 /* Main.storyboard */ = {
@@ -283,6 +398,7 @@
 		3D2625D6246558BE005C5596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L38F3RNUH3;
@@ -301,6 +417,7 @@
 		3D2625D7246558BE005C5596 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L38F3RNUH3;
@@ -313,6 +430,63 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DF4C0292465D2EC00B26B7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L38F3RNUH3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ChatModule/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qubicgo.ios.ChatModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3DF4C02A2465D2EC00B26B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L38F3RNUH3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ChatModule/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qubicgo.ios.ChatModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -333,6 +507,15 @@
 			buildConfigurations = (
 				3D2625D6246558BE005C5596 /* Debug */,
 				3D2625D7246558BE005C5596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF4C02B2465D2EC00B26B7C /* Build configuration list for PBXNativeTarget "ChatModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF4C0292465D2EC00B26B7C /* Debug */,
+				3DF4C02A2465D2EC00B26B7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
