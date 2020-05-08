@@ -10,7 +10,7 @@
         <!--Chat View Controller-->
         <scene sceneID="OOS-Wd-8Qe">
             <objects>
-                <viewController storyboardIdentifier="ChatViewController" id="9cX-iq-AAX" customClass="ChatViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatViewController" id="9cX-iq-AAX" customClass="ChatViewController" customModule="ChatModule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V02-GP-qqw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
